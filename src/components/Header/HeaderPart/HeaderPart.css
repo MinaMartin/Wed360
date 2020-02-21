@@ -1,0 +1,12 @@
+.headerPart{
+    /*width:43%*/
+    padding:0 10px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    border-right: 0;
+    border-left: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-basis: 42.5%;
+}
+

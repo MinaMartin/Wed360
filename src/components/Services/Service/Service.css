@@ -1,0 +1,72 @@
+.Service{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    /* max-width: 320px; */
+    margin-right: 0px;
+    flex-basis: 30%;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+    margin-bottom: 20px;
+}
+
+
+.Service .image{
+    flex-basis: 38%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.Service .image img{
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    transition: all 0.5s ease-in-out;
+}
+
+.Service .info{
+    flex-basis: 62%;
+    align-self: center;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.5px;
+}
+
+.Service .info h4{
+    margin-top: 0;
+    font-size: 16px;
+}
+
+.Service .info a{
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+.Service:hover{
+    border: 2px solid rgb(180, 176, 176);
+    background-color: rgb(241, 227, 227);
+}
+.Service:hover .image img{
+    transform: translateY(-15px);
+}
+.Service:hover a{
+    color: brown;
+}
+
+@media(max-width:991px ) and (min-width:567px){
+    .Service{
+        flex-basis: 45%;
+    }
+}
+
+@media(max-width:768px){
+    .Service{
+        flex-basis: 100%;
+    }
+}

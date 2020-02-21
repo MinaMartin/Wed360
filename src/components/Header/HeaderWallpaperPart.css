@@ -1,0 +1,48 @@
+.headerWallpaper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+    box-sizing: border-box;
+    background-color: rgb(73, 68, 68);
+    color: white;
+    border: 2px solid rgb(253, 251, 251);
+    box-sizing: border-box;
+    
+}
+/* .headerWallpaper {
+    text-decoration: none;
+    color: white;
+} */
+
+
+.headerWallpaper  img{
+    max-height: 40px;
+    max-width: 40px;
+    flex-basis: 100%;
+}
+
+.headerWallpaper.row1{
+    flex-basis: 50%;
+}
+
+.headerWallpaper.row2{
+    flex-basis: 25%;
+}
+
+.headerWallpaper  p{
+    font-size: 15px;
+    margin:0 ;
+    width: 125px;
+    flex-basis: 100%;
+    text-align: center;
+}
+@media(max-width:767px){
+    .headerWallpaper.row2{
+        flex-basis: 50%;
+    }
+}
+/* .headerWallpaper.row1:last-of-type{
+    border-right:0;
+} */
+

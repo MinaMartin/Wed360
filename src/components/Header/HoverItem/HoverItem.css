@@ -1,0 +1,50 @@
+.hover{
+    position: relative;
+}
+
+.hover .headerItem {
+    cursor: pointer;
+    font-size: 13.4px;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 12px 7px;
+}
+
+.hover .hoverList{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    /* align-items: center; */
+    font-size: 13.6px;
+    font-weight: 900;
+    /* border: 1.5px solid black; */
+    border-top: solid 1px #000;
+    position: absolute;
+    z-index: 9999;
+    top: 100%;
+    left: 0px;
+    display: none;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.hover:hover .hoverList{
+    display: flex; 
+}
+
+.hover .hoverList a{
+    text-decoration: none;
+    color: black;
+    flex-basis: 100%;
+    border-bottom:2px solid black ;
+    padding: 12px 0;
+}
+
+.hover .hoverList a:last-child{
+    border-bottom:0 ;
+}
+
+.hover .hoverList a:hover{
+    background-color: rgb(241, 227, 227);
+}

@@ -1,0 +1,73 @@
+.Gallery{
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.Gallery .breadcrumb{
+    flex-basis: 100%;
+    width: 92%;
+    margin: 120px 0 20px 0;
+    /* margin: 120px 4% 20px 4%; */
+}
+
+.Gallery .breadcrumb h3{
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.Gallery .breadcrumb h3 a{
+    color: #008174;
+    text-decoration: none;
+}
+
+.Gallery .clearButton,.Gallery .applyButton{
+    vertical-align: middle;
+    padding: 0;
+    border: solid 1px #000;
+    width: 55px;
+    height: 21px;
+    margin-left: 3px;
+    font-size: 12px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.Gallery .clearButton{
+    background-color: transparent;
+    
+}
+
+.Gallery .applyButton{
+    color: white;
+    background-color: black;
+}
+
+.Gallery .search input{
+    margin:20px 0;
+    padding: 5px;
+}
+
+.Gallery .search{
+    flex-basis: 25%;
+}
+
+.Gallery .Images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-basis: 75%;
+    box-sizing: border-box;
+}
+
+@media(max-width:767px){
+    .Gallery .Images{
+        flex-basis: 100%;
+    }
+    .Gallery .search{
+        flex-basis: 100%;
+    }
+    .Gallery .search input{
+        width: 95%;
+    }
+}
