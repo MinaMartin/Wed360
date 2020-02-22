@@ -1,0 +1,338 @@
+{
+    "Images":[
+        {
+            "id":"1",
+            "imageURL":"https://placehold.it/500",
+            "title":"Wedding details",
+            "description":"Description1",
+            "service":"Service1",
+            "category":"Venues"
+        },
+        {
+            "id":"2",
+            "imageURL":"https://placehold.it/500",
+            "title":"Wedding details2",
+            "description":"Description2",
+            "service":"Service2",
+            "category":"Designers"
+        },
+        {
+            "id":"3",
+            "imageURL":"https://placehold.it/500",
+            "title":"Wedding details3",
+            "description":"Description3",
+            "service":"Service2",
+            "category":"Bridal Boutique"
+        },
+        {
+            "id":"4",
+            "imageURL":"https://placehold.it/500",
+            "title":"Wedding details4",
+            "description":"Description4",
+            "service":"Service3",
+            "category":"outdoor Wedding"
+        },
+        {
+            "id":"5",
+            "imageURL":"https://placehold.it/500",
+            "title":"Wedding details5",
+            "description":"Description5",
+            "service":"Service4",
+            "category":"Wedding Dresses"
+        },
+        {
+            "id":"6",
+            "imageURL":"https://placehold.it/500",
+            "title":"Wedding details6",
+            "description":"Description6",
+            "service":"Service5",
+            "category":"Rings"
+        },
+        {
+            "id":"7",
+            "imageURL":"https://placehold.it/500",
+            "title":"Wedding details7",
+            "description":"Description7",
+            "service":"Service6",
+            "category":"Videographers"
+        },
+        {
+            "id":"8",
+            "imageURL":"https://placehold.it/500",
+            "title":"Wedding details8",
+            "description":"Description8",
+            "service":"Service7",
+            "category":"Photographers"
+        },
+        {
+            "id":"9",
+            "imageURL":"https://placehold.it/500",
+            "title":"Wedding details9",
+            "description":"Description9",
+            "service":"Service8",
+            "category":"Photographers"
+        },
+        {
+            "id":"10",
+            "imageURL":"https://placehold.it/500",
+            "title":"Wedding details10",
+            "description":"Description10",
+            "service":"Service9",
+            "category":"Photographers"
+        },
+        {
+            "id":"11",
+            "imageURL":"https://placehold.it/500",
+            "title":"Wedding details11",
+            "description":"Description11",
+            "service":"Service10",
+            "category":"Rings"
+        },
+        {
+            "id":"12",
+            "imageURL":"https://placehold.it/500",
+            "title":"Wedding details13",
+            "description":"Description13",
+            "service":"Service11",
+            "category":"Photographers"
+        },
+        {
+            "id":"13",
+            "imageURL":"https://placehold.it/500",
+            "title":"Wedding details14",
+            "description":"Description14",
+            "service":"Service12",
+            "category":"Videographers"
+        },
+        {
+            "id":"14",
+            "imageURL":"https://placehold.it/500",
+            "title":"Wedding details12",
+            "description":"Description12",
+            "service":"Service13",
+            "category":"Videographers"
+        },
+        {
+            "id":"15",
+            "imageURL":"https://placehold.it/500",
+            "title":"Wedding details13",
+            "description":"Description13",
+            "service":"Service13",
+            "category":"Videographers"
+        },
+        {
+            "id":"16",
+            "imageURL":"https://placehold.it/500",
+            "title":"Wedding details14",
+            "description":"Description14",
+            "service":"Service13",
+            "category":"Videographers"
+        },
+        {
+            "id":"17",
+            "imageURL":"https://placehold.it/500",
+            "title":"Wedding details15",
+            "description":"Description15",
+            "service":"Service13",
+            "category":"Videographers"
+        },
+        {
+            "id":"18",
+            "imageURL":"https://placehold.it/500",
+            "title":"Wedding details16",
+            "description":"Description16",
+            "service":"Service13",
+            "category":"Videographers"
+        },
+        {
+            "id":"19",
+            "imageURL":"https://placehold.it/500",
+            "title":"Wedding details17",
+            "description":"Description17",
+            "service":"Service13",
+            "category":"Videographers"
+        },
+        {
+            "id":"20",
+            "imageURL":"https://placehold.it/500",
+            "title":"Wedding details18",
+            "description":"Description18",
+            "service":"Service13",
+            "category":"Videographers"
+        },
+        {
+            "id":"21",
+            "imageURL":"https://placehold.it/500",
+            "title":"Wedding details19",
+            "description":"Description19",
+            "service":"Service13",
+            "category":"Videographers"
+        },
+        {
+            "id":"22",
+            "imageURL":"https://placehold.it/500",
+            "title":"Wedding details20",
+            "description":"Description20",
+            "service":"Service13",
+            "category":"Videographers"
+        },
+        {
+            "id":"23",
+            "imageURL":"https://placehold.it/500",
+            "title":"Wedding details21",
+            "description":"Description21",
+            "service":"Service13",
+            "category":"Videographers"
+        },
+        {
+            "id":"24",
+            "imageURL":"https://placehold.it/500",
+            "title":"Wedding details22",
+            "description":"Description22",
+            "service":"Service13",
+            "category":"Videographers"
+        },
+        {
+            "id":"25",
+            "imageURL":"https://placehold.it/500",
+            "title":"Wedding details23",
+            "description":"Description23",
+            "service":"Service13",
+            "category":"Videographers"
+        },
+        {
+            "id":"26",
+            "imageURL":"https://placehold.it/500",
+            "title":"Wedding details24",
+            "description":"Description24",
+            "service":"Service13",
+            "category":"Videographers"
+        },
+        {
+            "id":"27",
+            "imageURL":"https://placehold.it/500",
+            "title":"Wedding details25",
+            "description":"Description25",
+            "service":"Service13",
+            "category":"Videographers"
+        },
+        {
+            "id":"28",
+            "imageURL":"https://placehold.it/500",
+            "title":"Wedding details26",
+            "description":"Description26",
+            "service":"Service13",
+            "category":"Videographers"
+        },
+        {
+            "id":"29",
+            "imageURL":"https://placehold.it/500",
+            "title":"Wedding details27",
+            "description":"Description27",
+            "service":"Service13",
+            "category":"Videographers"
+        },
+        {
+            "id":"30",
+            "imageURL":"https://placehold.it/500",
+            "title":"Wedding details28",
+            "description":"Description28",
+            "service":"Service13",
+            "category":"Videographers"
+        },
+        {
+            "id":"31",
+            "imageURL":"https://placehold.it/500",
+            "title":"Wedding details29",
+            "description":"Description29",
+            "service":"Service13",
+            "category":"Videographers"
+        },
+        {
+            "id":"32",
+            "imageURL":"https://placehold.it/500",
+            "title":"Wedding details30",
+            "description":"Description30",
+            "service":"Service13",
+            "category":"Videographers"
+        },
+        {
+            "id":"33",
+            "imageURL":"https://placehold.it/500",
+            "title":"Wedding details31",
+            "description":"Description31",
+            "service":"Service13",
+            "category":"Videographers"
+        },
+        {
+            "id":"34",
+            "imageURL":"https://placehold.it/500",
+            "title":"Wedding details32",
+            "description":"Description32",
+            "service":"Service13",
+            "category":"Videographers"
+        },
+        {
+            "id":"35",
+            "imageURL":"https://placehold.it/500",
+            "title":"Wedding details33",
+            "description":"Description33",
+            "service":"Service13",
+            "category":"Videographers"
+        },
+        {
+            "id":"36",
+            "imageURL":"https://placehold.it/500",
+            "title":"Wedding details34",
+            "description":"Description34",
+            "service":"Service13",
+            "category":"Videographers"
+        },
+        {
+            "id":"37",
+            "imageURL":"https://placehold.it/500",
+            "title":"Wedding details35",
+            "description":"Description35",
+            "service":"Service13",
+            "category":"Videographers"
+        }
+    ],
+    "categories":[
+        {
+            "id":"1",
+            "categoryName":"Venues"
+        },
+        {
+            "id":"2",
+            "categoryName":"Designers"
+        },
+        {
+            "id":"3",
+            "categoryName":"outdoor Wedding"
+        },
+        {
+            "id":"4",
+            "categoryName":"Wedding Dresses"
+        },
+        {
+            "id":"5",
+            "categoryName":"Rings"
+        },
+        {
+            "id":"6",
+            "categoryName":"Videographers"
+        },
+        {
+            "id":"7",
+            "categoryName":"Photographers"
+        },
+        {
+            "id":"8",
+            "categoryName":"DJs"
+        },
+        {
+            "id":"9",
+            "categoryName":"Wedding Planners"
+        }
+    ]
+}
