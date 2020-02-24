@@ -1,66 +1,46 @@
-import React, { useEffect, useState, useRef } from 'react'
+import React, { useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 
 import Image from '../../Gallary/Image/Image';
 import axios from 'axios';
 import './oneCategory.css';
+import * as oneCategoryActionTypes from "../../../store/actions/oneCategory";
+import { useDispatch, useSelector } from 'react-redux';
+
+
 
 export default function OneCategory(props) {
-    const [ImagesState,setImages]=useState([]);
-    let CategoryName=useRef();
-    /* const [totalNumberofImages,setTotalNumberOfImages]=useState(''); */
-    //const [paginationContent,setPaginationContent]=useState([]);
-    //let [pageNumber,setPageNumber]=useState(1);
-    const [searchValue,setSearchValue]=useState('')
+    const CategoryName=useSelector(state => {return state.oneCategory.categoryName});
+    const ImagesState=useSelector(state => {return state.oneCategory.Images});
+    const dispatch =useDispatch();
+    const searchValue = useSelector(state => {return state.oneCategory.searchValue});
 
     useEffect(() => {
-        axios.get(`http://localhost:8080/categories/${props.match.params.id}`)
-            .then(response => {
-                CategoryName.current=response.data.categoryName;
-                return axios.get(`http://localhost:8080/Images/?category=${CategoryName.current}`)
-            })
-            .then(response => {
-                //console.log(response);
-                const imagesArr = [];
-                for(let imageInfo in response.data){
-                    imagesArr.push({...response.data[imageInfo]});
-                }
-                setImages(imagesArr);
-            })
-    },[props.match.params.id])//get Category Name
+        dispatch({type:oneCategoryActionTypes.CAT_ID,categoryId:props.match.params.id});
+        dispatch({type:oneCategoryActionTypes.REQUEST_CATEGORY_IMAGES});
+    },[props.match.params.id,dispatch])//get Category Name
 
     const onSubmitHandler =(event) => {
         event.preventDefault();
-        axios.get(`http://localhost:8080/Images?category=${CategoryName.current}&title=${searchValue.trim()}`)
-        .then(response => {
-            //console.log(response);
-            const imagesArr = [];
-            for(let imageInfo in response.data){
-                imagesArr.push({...response.data[imageInfo]});
-            }
-            setImages(imagesArr);
-        })            
-        .catch(err => {
-            console.log(err);
-        })
+        dispatch({type:oneCategoryActionTypes.SEARCH_CATEGORY_IMAGES});
     }
     
     return (
         <div className="Gallery">
             <div className="breadcrumb">
-                <h3><a href="/">Gallery </a> > {CategoryName.current}</h3>
+                <h3><a href="/">Gallery </a> > {CategoryName}</h3>
             </div>
             <div className="search">
                 <form onSubmit={onSubmitHandler}>
                     <div>
-                        <button className='clearButton'>Clear</button>
+                        <button className='clearButton' type="button">Clear</button>
                         <button className='applyButton' type="submit">Apply</button>
                     </div>
                     <input 
                     type="text" 
-                    placeholder="Search" 
+                    placeholder="Search Images in this categories" 
                     value={searchValue} 
-                    onChange={event => {setSearchValue(event.target.value)}}></input>
+                    onChange={event => {dispatch({type:oneCategoryActionTypes.TWO_WAY_BINDING,searchValue:event.target.value})}}></input>
                 </form>
             </div>
             <div className='Images'>
@@ -76,14 +56,6 @@ export default function OneCategory(props) {
                     ></Image>
                 ))}
             </div>
-{/*             <div className="pagination">
-                <button onClick={()=> turnPageOverHandler('previous')} disabled={pageNumber === 1}>Previous</button>
-                {paginationContent.map(onePage => (
-                    <button onClick={()=> turnPageOverHandler(onePage)} key={onePage} 
-                    className={pageNumber === onePage? "active":null}>{onePage}</button>
-                ))}
-                <button onClick={()=> turnPageOverHandler('next')} disabled={pageNumber === Math.max(...paginationContent)}>Next</button>
-            </div> */}
         </div>
     )
 }

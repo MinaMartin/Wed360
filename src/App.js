@@ -7,11 +7,12 @@ import Services from "./components/Services/Services";
 import Gallery from "./components/Gallary/Gallary";
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab,faFacebookF,faInstagram,faTwitter } from '@fortawesome/free-brands-svg-icons';
-import { faChevronUp,faUser,faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import { faChevronUp,faUser,faChevronDown,faHome } from '@fortawesome/free-solid-svg-icons';
 import { BrowserRouter } from 'react-router-dom';
 import Container from './components/Container/Container';
- 
-library.add(fab,faFacebookF,faInstagram,faChevronUp,faUser,faTwitter,faChevronDown);
+
+
+library.add(fab,faFacebookF,faInstagram,faChevronUp,faUser,faTwitter,faChevronDown,faHome);
 
 function App() {
   return (
